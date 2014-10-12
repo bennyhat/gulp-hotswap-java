@@ -7,7 +7,6 @@ var lThrough = require("through2");
 var lExecuteSynchronous = require("execSync");
 
 var cPluginError = lGulpUtility.PluginError;
-
 var sModuleName = lGulpUtility.colors.magenta("gulp-hotswap-java:");
 
 /*

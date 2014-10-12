@@ -9,7 +9,7 @@
   },
   "author": {
     "name": "Ben Brewer",
-    "email": "benbrewer@dswinc.com",
+    "email": "ben@benbrewer.me",
     "url": "http://benbrewer.me"
   },
   "engines": {
@@ -39,6 +39,5 @@
   "homepage": "https://github.com/bennyhat/gulp-hotswap-java",
   "_id": "gulp-hotswap-java@0.0.1",
   "_resolved": "https://registry.npmjs.org/gulp-hotswap-java/-/gulp-hotswap-java-0.0.1.tgz",
-  "readme": "gulp-hotswap-java\n=================\n\nHotswap Java Class Files via a Debug Port\n",
   "_shasum": "e7ef5896bdeca963248ae92ecaceb467d9421e52"
 }
