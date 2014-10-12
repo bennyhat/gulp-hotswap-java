@@ -1,5 +1,4 @@
 # gulp-hotswap-java
-=================
 
 Hotswap Java class files via a debug port
 
