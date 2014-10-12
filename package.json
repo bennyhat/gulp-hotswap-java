@@ -1,0 +1,44 @@
+{
+  "name": "gulp-hotswap-java",
+  "version": "0.0.1",
+  "description": "Hotswap Java Class Files via a Debug Port",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/bennyhat/gulp-hotswap-java"
+  },
+  "author": {
+    "name": "Ben Brewer",
+    "email": "benbrewer@dswinc.com",
+    "url": "http://benbrewer.me"
+  },
+  "engines": {
+    "node": ">=0.10.0"
+  },
+  "files": [
+    "index.js",
+    "hotswap.jar"
+  ],
+  "keywords": [
+    "gulpplugin",
+    "file",
+    "files",
+    "java",
+    "hotswap"
+  ],
+  "dependencies": {
+    "gulp-util": "^3.0.0",
+    "through2": "^0.6.1",
+    "execSync": "^1.0.2",
+    "globule": "^0.2.0"
+  },
+  "readmeFilename": "README.md",
+  "bugs": {
+    "url": "https://github.com/bennyhat/gulp-hotswap-java/issues"
+  },
+  "homepage": "https://github.com/bennyhat/gulp-hotswap-java",
+  "_id": "gulp-hotswap-java@0.0.1",
+  "_resolved": "https://registry.npmjs.org/gulp-hotswap-java/-/gulp-hotswap-java-0.0.1.tgz",
+  "readme": "gulp-hotswap-java\n=================\n\nHotswap Java Class Files via a Debug Port\n",
+  "_shasum": "e7ef5896bdeca963248ae92ecaceb467d9421e52"
+}
