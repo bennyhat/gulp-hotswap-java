@@ -13,6 +13,9 @@ var sModuleName = lGulpUtility.colors.magenta("gulp-hotswap-java:");
 	gulp-hotswap-java
 	
 	A fairly simple call of a Java hotswap agent to hot swap classes on a JVM (connected to by socket).
+	This includes some helper functions to find Java on the system. At first glance, this seems pretty needless.
+	However, tests with Windows have shown that even when on the path after a default install, a Java call will tank.
+	
 	Typical caveats for hot swapping apply:
 		* This won't be able to connect to your JVM if another debugger is hooked up
 		* This won't swap classes that have had their method signatures change	
@@ -99,10 +102,9 @@ module.exports = function (oOptions) {
 		//		as files relative to the base globbing path and so could be more efficiently used
 		var sJavaCommand = oOptions.java;
 		sJavaCommand += " -Dpath=" + sBasePath;
-		sJavaCommand += " -cp " + __dirname + lPath.sep + "hotswap.jar"
 		
-		// finally add on the hotswap class to use and the file path that will get hotswapped
-		sJavaCommand += " me.benbrewer.tools.HotSwap ";
+		// finally add on the hotswap jar to use and the file path that will get hotswapped
+		sJavaCommand += " -jar " + __dirname + lPath.sep + "hotswap.jar ";
 		sJavaCommand += sFilePath;		
 		
 		// a quick and dirty debug
